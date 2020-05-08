@@ -1,0 +1,7 @@
+google
+google-api-python-client
+google-cloud-firestore
+grpcio
+requests
+watchdog
+wheel

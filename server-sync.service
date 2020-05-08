@@ -1,0 +1,15 @@
+[Unit]
+Description=POSP ServerSync
+
+[Service]
+Type=simple
+User=jenkins
+Environment="API_AUTH_KEY=PRIV_AUTH"
+Environment="FB_KEY_EXTRA=PRIV_FB"
+Environment="MASTER_NODE=false"
+Environment="SF_KEY_EXTRA=PRIV_SF"
+Environment="SSH_USER=agentfabulous"
+ExecStart=/usr/bin/server-sync.py
+
+[Install]
+WantedBy=multi-user.target
